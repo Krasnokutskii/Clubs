@@ -11,6 +11,11 @@
 		F713A31329E9CC0D0068D7ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A31229E9CC0D0068D7ED /* ContentView.swift */; };
 		F713A31529E9CC0F0068D7ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F713A31429E9CC0F0068D7ED /* Assets.xcassets */; };
 		F713A31929E9CC0F0068D7ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F713A31829E9CC0F0068D7ED /* Preview Assets.xcassets */; };
+		F713A32029E9D6D20068D7ED /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A31F29E9D6D20068D7ED /* SettingsView.swift */; };
+		F713A32229E9D7BB0068D7ED /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A32129E9D7BB0068D7ED /* Settings.swift */; };
+		F713A32429E9DC7F0068D7ED /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A32329E9DC7F0068D7ED /* FeedView.swift */; };
+		F713A32629E9E0250068D7ED /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A32529E9E0250068D7ED /* ChatView.swift */; };
+		F713A32829EA79F90068D7ED /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A32729EA79F90068D7ED /* CalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		F713A31429E9CC0F0068D7ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F713A31629E9CC0F0068D7ED /* Clubs.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Clubs.entitlements; sourceTree = "<group>"; };
 		F713A31829E9CC0F0068D7ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F713A31F29E9D6D20068D7ED /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F713A32129E9D7BB0068D7ED /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		F713A32329E9DC7F0068D7ED /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		F713A32529E9E0250068D7ED /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		F713A32729EA79F90068D7ED /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,11 @@
 			children = (
 				F713A31029E9CC0D0068D7ED /* ClubsApp.swift */,
 				F713A31229E9CC0D0068D7ED /* ContentView.swift */,
+				F713A32729EA79F90068D7ED /* CalendarView.swift */,
+				F713A31F29E9D6D20068D7ED /* SettingsView.swift */,
+				F713A32329E9DC7F0068D7ED /* FeedView.swift */,
+				F713A32129E9D7BB0068D7ED /* Settings.swift */,
+				F713A32529E9E0250068D7ED /* ChatView.swift */,
 				F713A31429E9CC0F0068D7ED /* Assets.xcassets */,
 				F713A31629E9CC0F0068D7ED /* Clubs.entitlements */,
 				F713A31729E9CC0F0068D7ED /* Preview Content */,
@@ -139,7 +154,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F713A32429E9DC7F0068D7ED /* FeedView.swift in Sources */,
+				F713A32829EA79F90068D7ED /* CalendarView.swift in Sources */,
+				F713A32029E9D6D20068D7ED /* SettingsView.swift in Sources */,
 				F713A31329E9CC0D0068D7ED /* ContentView.swift in Sources */,
+				F713A32229E9D7BB0068D7ED /* Settings.swift in Sources */,
+				F713A32629E9E0250068D7ED /* ChatView.swift in Sources */,
 				F713A31129E9CC0D0068D7ED /* ClubsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,7 +307,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KranokutskiiYaroslav..Clubs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -325,7 +347,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = KranokutskiiYaroslav..Clubs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

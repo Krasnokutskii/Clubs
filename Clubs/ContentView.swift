@@ -9,18 +9,39 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            CalendarView()
+                .badge("New")
+                .tabItem {
+                    Label("Calendar", systemImage:"calendar")
+                }
+            
+            ChatView()
+                .badge("!")
+                .tabItem {
+                    Label("Chats", systemImage: "message.fill")
+                }
+                .tabViewStyle(.automatic)
+            
+            FeedView()
+                .tabItem {
+                    Label("Feed", systemImage: "scroll")
+                }
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 14 Pro")
+            .previewDisplayName("Main View")
+            
     }
 }
