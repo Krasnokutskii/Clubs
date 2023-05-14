@@ -16,6 +16,7 @@
 		F713A32429E9DC7F0068D7ED /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A32329E9DC7F0068D7ED /* FeedView.swift */; };
 		F713A32629E9E0250068D7ED /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A32529E9E0250068D7ED /* ChatView.swift */; };
 		F713A32829EA79F90068D7ED /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F713A32729EA79F90068D7ED /* CalendarView.swift */; };
+		F7524A602A115B1600E6E8A8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7524A5F2A115B1600E6E8A8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		F713A32329E9DC7F0068D7ED /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		F713A32529E9E0250068D7ED /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		F713A32729EA79F90068D7ED /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		F7524A5F2A115B1600E6E8A8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +67,10 @@
 				F713A31029E9CC0D0068D7ED /* ClubsApp.swift */,
 				F713A31229E9CC0D0068D7ED /* ContentView.swift */,
 				F713A32729EA79F90068D7ED /* CalendarView.swift */,
-				F713A31F29E9D6D20068D7ED /* SettingsView.swift */,
 				F713A32329E9DC7F0068D7ED /* FeedView.swift */,
+				F713A31F29E9D6D20068D7ED /* SettingsView.swift */,
 				F713A32129E9D7BB0068D7ED /* Settings.swift */,
+				F7524A5F2A115B1600E6E8A8 /* Constants.swift */,
 				F713A32529E9E0250068D7ED /* ChatView.swift */,
 				F713A31429E9CC0F0068D7ED /* Assets.xcassets */,
 				F713A31629E9CC0F0068D7ED /* Clubs.entitlements */,
@@ -161,6 +164,7 @@
 				F713A32229E9D7BB0068D7ED /* Settings.swift in Sources */,
 				F713A32629E9E0250068D7ED /* ChatView.swift in Sources */,
 				F713A31129E9CC0D0068D7ED /* ClubsApp.swift in Sources */,
+				F7524A602A115B1600E6E8A8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

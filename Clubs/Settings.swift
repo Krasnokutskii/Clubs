@@ -7,15 +7,12 @@
 
 import Foundation
 
-class SettingVM: ObservableObject{
-    @Published var settings = [
-    Setting(name: "Dark Mode", isActive: false),
-    Setting(name: "Default Settings", isActive: true),
-    Setting(name: "Most Relevant Feed", isActive: true)
-    ]
-}
-
-struct Setting: Hashable {
-    let name: String
-    let isActive: Bool
+struct Settings {
+    var setting1 = true
+    var setting2 = false
+    var firstName = ""
+    var lastName = ""
+    var nickName = ""
+    var birthday = Date()
+    var darkMode = false
 }

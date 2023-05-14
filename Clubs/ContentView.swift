@@ -10,14 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView {
-            CalendarView()
-                .badge("New")
-                .tabItem {
-                    Label("Calendar", systemImage:"calendar")
-                }
+//            CalendarView()
+//                .badge("New")
+//                .tabItem {
+//                    Label("Calendar", systemImage:"calendar")
+//                }
             
             ChatView()
-                .badge("!")
+                .badge("1")
                 .tabItem {
                     Label("Chats", systemImage: "message.fill")
                 }

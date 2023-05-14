@@ -8,48 +8,54 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @StateObject private var viewModel = SettingVM()
-    @State var setting1 = false
-    @State var setting2 = false
-    @State var setting3 = false
-    
+    @State var settings = Settings()
+    let gradient = LinearGradient(colors: [.pink, .blue, .purple], startPoint: .topLeading, endPoint: .bottomTrailing)
     var body: some View {
-        NavigationView {
-            Form {
-                Section(content: {
-                    ForEach(viewModel.settings, id: \.self) { setting in
-                        Toggle(isOn: $setting1) {
-                            Text(setting.name)
+        VStack {
+            NavigationView {
+                VStack(spacing: 0){
+                    Form {
+                        ZStack {
+                            Rectangle()
+                                .fill(gradient)
+                                .padding(-20)
+                            HStack {
+                                Spacer()
+                                Image("avatar")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 180, height: 180)
+                                    .clipShape(RoundedRectangle(cornerRadius: 90))
+                                    .onTapGesture {
+                                        print("hi")
+                                    }
+                                Spacer()
+                            }
                         }
-                    }
-                }, header: {
-                    Text("Header")
-                }, footer: {
-                    Text("Footer")
-                })
-                Section(content: {
-                    ForEach(viewModel.settings, id: \.self) { setting in
-                        Toggle(isOn: $setting2) {
-                            Text(setting.name)
-                        }
-                    }
-                }, header: {
-                    Text("Header")
-                }, footer: {
-                    Text("Footer")
-                })
-                Section(content: {
-                    ForEach(viewModel.settings, id: \.self) { setting in
-                        Toggle(isOn: $setting3) {
-                            Text(setting.name)
-                        }
-                    }
-                }, header: {
-                    Text("Header")
-                }, footer: {
-                    Text("Footer")
-                })
-            }.navigationTitle("Settings")
+                        Section(content: {
+                            TextField("First Name", text: $settings.firstName)
+                            TextField("Last Name", text: $settings.lastName)
+                            DatePicker("Birthday", selection: $settings.birthday, displayedComponents: .date)
+                        }, header: {
+                            Text("Accaunt")
+                        })
+                        Section(content: {
+                            TextField("NickName", text: $settings.nickName)
+                            Toggle("Use nickname", isOn: $settings.setting2)
+                        },footer: {
+                            Text("When on, people will see your nickname instead of real name")
+                        })
+                        Section(content: {
+                            Toggle("Dark mode", isOn: $settings.darkMode)
+                            Link("Term of service", destination: URL(string: "https://www.apple.com")!)
+                                .tint(.red)
+                        },
+                        header: {
+                            Text("Actions")
+                        })
+                    }.navigationTitle("Settings")
+                }
+            }
         }
     }
 }
